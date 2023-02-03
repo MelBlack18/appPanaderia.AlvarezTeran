@@ -22,7 +22,7 @@ También se incluye un BreadCrumb que permite volver al menú principal.
 
 ## Librerías Instaladas:
 
-- **Font Awesome**
+- **Font Awesome** [Instalación](https://fontawesome.com/docs/web/use-with/react-native)
 
 Se utilizó la librería FontAwesome para los símbolos como el de Home del BreadCrumb
 
