@@ -19,3 +19,13 @@ Cada categoría muestra el listado de los productos que le pertenecen y un Bread
 El detalle de producto muestra la foto, el nombre y el precio. Un selector de qué presentación quiere adquirir el cliente, un selector de cantidad de unidades para comprar y el botón de Agregar al Carrito. 
 
 También se incluye un BreadCrumb que permite volver al menú principal.
+
+## Librerías Instaladas:
+
+- **Font Awesome**
+
+Se utilizó la librería FontAwesome para los símbolos como el de Home del BreadCrumb
+
+- **React Navigation**
+
+Se utilizó esta librería para establecer la navegación entre pantallas de la app
