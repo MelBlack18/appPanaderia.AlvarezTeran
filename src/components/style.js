@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {theme} from '../constants/theme'
+import {THEME} from '../constants/theme'
 
 export const styles = StyleSheet.create({
     ContainterHeaderImage: {
@@ -15,11 +15,11 @@ export const styles = StyleSheet.create({
     TextHeaderImage:{
         fontFamily:"MontserratExtraBold",
         fontSize:28,
-        color:theme.colors.primary
+        color:THEME.colors.primary
     },
     wrapperItemMenu:{
       marginBottom:50,
-      backgroundColor:theme.colors.accent,
+      backgroundColor:THEME.colors.accent,
       width:"100%",
       height:60,
       alignItems:"center",
@@ -43,7 +43,7 @@ export const styles = StyleSheet.create({
     wrapperSummary:{
       flexDirection:"row",
       width:"100%",
-      borderBottomColor: theme.colors.grey,
+      borderBottomColor: THEME.colors.grey,
       borderBottomWidth: 1,
       marginTop:"2%",
       marginBottom: "2%",
@@ -72,8 +72,13 @@ export const styles = StyleSheet.create({
       alignItems:"flex-start", 
       marginTop:"4%"
     },
+    textosCard: {
+      fontFamily:"MontserratRegular",
+      fontSize:12
+    },
     selectorVariaciones:{
-      backgroundColor:theme.colors.accent,
+      fontFamily:"MontserratRegular",
+      fontSize:12,
       width:94,
       height:24,
       alignItems:"center",
@@ -81,7 +86,7 @@ export const styles = StyleSheet.create({
     },
     addToCartButton:{
       width:"100%",
-      backgroundColor: theme.colors.primary,
+      backgroundColor: THEME.colors.primary,
       alignItems:"center",
       justifyContent:"center"
     },

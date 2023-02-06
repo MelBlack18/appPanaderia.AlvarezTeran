@@ -4,11 +4,12 @@ import { styles } from './style';
 import ProductCard from '../../components/ProductCard';
 import Breadcrumbs from '../../components/Breadcrumbs';
 
-const ProductDetail = ({navigation}) => {
+const ProductDetail = ({navigation, route}) => {
+  
   return (
     <View style={styles.container}>
-      <Breadcrumbs navigation={navigation} />
-      <ProductCard />
+      <Breadcrumbs navigation={navigation} current={route.params} />
+      <ProductCard product={route.params} />
     </View>
   )
 }

@@ -2,22 +2,27 @@ import {View, Text, Button, Image, Pressable} from 'react-native';
 import React from 'react'
 import { styles } from './style';
 
-const ProductCard = () => {
+const ProductCard = ({product}) => {
   return (
     <View style={styles.wrapperDetail}>
       <Image source={require('../../assets/img/producto.jpg')} />
 
       <View style={styles.wrappersBloques}>
-        <Text style={{fontFamily:"MontserratRegular", fontSize:24}}>Brownie</Text>
-        <Text style={{fontFamily:"MontserratSemiBold", fontSize:24}}>$1.500,00</Text>
+        <Text style={{fontFamily:"MontserratRegular", fontSize:24}}>{product.name}</Text>
+        <Text style={{fontFamily:"MontserratSemiBold", fontSize:24}}>${product.price}</Text>
+      </View>
+
+      <View style={styles.wrappersBloques}>
+        <Text style={{fontFamily:"MontserratRegular", fontSize:18}}>Descripción:</Text>
+        <Text style={styles.textosCard}>{product.description}</Text>
       </View>
       
       <View style={styles.wrappersBloques}>
-        <Text style={{fontFamily:"MontserratRegular", fontSize:18}}>Presentaciones:</Text>
-        <View style={{flexDirection:"row", justifyContent:"space-around", width:"100%", marginTop:"2%"}}>
-            <Pressable style={styles.selectorVariaciones}><Text>Individual</Text></Pressable>
-            <Pressable style={styles.selectorVariaciones}><Text>4 Porciones</Text></Pressable>
-            <Pressable style={styles.selectorVariaciones}><Text>8 Porciones</Text></Pressable>
+        <Text style={{fontFamily:"MontserratRegular", fontSize:18}}>Presentacion:</Text>
+        <View style={{flexDirection:"row", justifyContent:"flex-start", width:"100%"}}>
+            <Text style={styles.selectorVariaciones}>{product.presentacion}</Text>
+            {/* <Pressable style={styles.selectorVariaciones}><Text>4 Porciones</Text></Pressable>
+            <Pressable style={styles.selectorVariaciones}><Text>8 Porciones</Text></Pressable> */}
         </View>
       </View>
       <View style={styles.wrappersBloques}>

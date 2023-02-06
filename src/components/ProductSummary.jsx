@@ -2,7 +2,8 @@ import {View, Text, Button, Image} from 'react-native';
 import React from 'react'
 import { styles } from './style';
 
-const ProductSummary = ({navigation}) => {
+const ProductSummary = ({item, onSelected}) => {
+    
   return (
     <View style={styles.wrapperSummary}>
 
@@ -12,11 +13,11 @@ const ProductSummary = ({navigation}) => {
 
         <View style={{width:"60%", paddingRight:"2%", justifyContent:"space-between"}}>
             <View style={styles.wrapperSummaryName}>
-                <Text style={{fontFamily:"MontserratLight", fontSize:24}}>Brownie</Text>
-                <Text style={{fontFamily:"MontserratSemiBold", fontSize:24}}>$1.500,00</Text>
+                <Text style={{fontFamily:"MontserratLight", fontSize:24}}>{item.item.title}</Text>
+                <Text style={{fontFamily:"MontserratSemiBold", fontSize:24}}>${item.item.price}</Text>
             </View>
             <View style={styles.wrapperSummaryButton}>
-                <Button title='VER MÁS' onPress={() => {navigation.navigate("Product Detail")}} />
+                <Button title='VER MÁS' onPress={() => {onSelected(item.item)}} />
             </View>
         </View>
 
