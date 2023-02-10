@@ -1,10 +1,10 @@
-import {View, Text, Button, Image, Pressable} from 'react-native';
+import {View, Text, Image, Pressable, ScrollView} from 'react-native';
 import React from 'react'
 import { styles } from './style';
 
 const ProductCard = ({product}) => {
   return (
-    <View style={styles.wrapperDetail}>
+    <ScrollView contentContainerStyle={styles.wrapperDetail}>
       <Image source={require('../../assets/img/producto.jpg')} />
 
       <View style={styles.wrappersBloques}>
@@ -38,7 +38,7 @@ const ProductCard = ({product}) => {
             <Text style={styles.addToCartText}>AGREGAR AL CARRITO</Text>
         </Pressable>
       </View>
-    </View>
+    </ScrollView>
   )
 }
 

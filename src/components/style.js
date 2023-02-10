@@ -18,7 +18,8 @@ export const styles = StyleSheet.create({
         color:THEME.colors.primary
     },
     wrapperItemMenu:{
-      marginBottom:50,
+      marginBottom:25,
+      marginTop:25,
       backgroundColor:THEME.colors.accent,
       width:"100%",
       height:60,
@@ -94,5 +95,42 @@ export const styles = StyleSheet.create({
       fontFamily:"MontserratRegular",
       fontSize:20,
       color:"#fff"
+    },
+    wrapperCartItem:{
+      flexDirection:"row",
+      width:"100%",
+      borderBottomColor: THEME.colors.grey,
+      borderBottomWidth: 1,
+      marginTop:"2%",
+      marginBottom: "2%",
+      paddingBottom:"2%",
+      justifyContent:"space-around"
+    },
+    wrapperCartItemData:{
+      width:"50%",
+      marginLeft:"8%"
+    },
+    wrapperCartItemDelete:{
+      width:"50%",
+      alignItems:"flex-end",
+      justifyContent:"center",
+      marginRight:"8%"
+    },
+    cartDataTitle:{
+      fontFamily:"MontserratRegular", 
+      fontSize:20
+    },
+    cartDataText:{
+      fontFamily:"MontserratRegular", 
+      fontSize:15
+    },
+    tabItem:{
+      justifyContent:"center",
+      alignItems:"center"
+    },
+    tabText:{
+      fontFamily:"MontserratRegular", 
+      fontSize: 16, 
+      marginTop:"7%"
     }
 });

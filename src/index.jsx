@@ -1,7 +1,7 @@
-import { ActivityIndicator, View } from 'react-native';
+import { ActivityIndicator, Text, View } from 'react-native';
 import { useFonts } from 'expo-font';
-import ShopNavigator from './navigation/ShopNavigator';
 import { styles } from './styles';
+import { AppNavigator } from './navigation'
 
 const App = () => {
   const [loaded] = useFonts({
@@ -20,7 +20,7 @@ const App = () => {
     )
   }
 
-  return <ShopNavigator />
+  return <AppNavigator />
 
 }
 
