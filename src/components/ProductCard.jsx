@@ -3,12 +3,13 @@ import React from 'react'
 import { styles } from './style';
 
 const ProductCard = ({product}) => {
+
   return (
     <ScrollView contentContainerStyle={styles.wrapperDetail}>
       <Image source={require('../../assets/img/producto.jpg')} />
 
       <View style={styles.wrappersBloques}>
-        <Text style={{fontFamily:"MontserratRegular", fontSize:24}}>{product.name}</Text>
+        <Text style={{fontFamily:"MontserratRegular", fontSize:24}}>{product.title}</Text>
         <Text style={{fontFamily:"MontserratSemiBold", fontSize:24}}>${product.price}</Text>
       </View>
 
@@ -20,7 +21,7 @@ const ProductCard = ({product}) => {
       <View style={styles.wrappersBloques}>
         <Text style={{fontFamily:"MontserratRegular", fontSize:18}}>Presentacion:</Text>
         <View style={{flexDirection:"row", justifyContent:"flex-start", width:"100%"}}>
-            <Text style={styles.selectorVariaciones}>{product.presentacion}</Text>
+            <Text style={styles.selectorVariaciones}>{product.weight}</Text>
             {/* <Pressable style={styles.selectorVariaciones}><Text>4 Porciones</Text></Pressable>
             <Pressable style={styles.selectorVariaciones}><Text>8 Porciones</Text></Pressable> */}
         </View>
