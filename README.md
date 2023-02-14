@@ -55,3 +55,7 @@ Se utilizó la librería FontAwesome para los símbolos como el de Home del Brea
 - **React Navigation**
 
 Se utilizó esta librería para establecer la navegación entre pantallas de la app
+
+- **Redux**
+
+Se utilizó para el manejo de estados
